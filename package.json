@@ -1,7 +1,6 @@
 {
-  "name": "krabi",
-  "description": "Premium Ghost Theme",
-  "demo": "http://krabi.aspirethemes.com/",
+  "name": "ravetta",
+  "description": "Ben Ravetta Creative",
   "version": "1.0.2",
   "engines": {
     "ghost": ">=3.0.0",
@@ -48,9 +47,9 @@
     "node-sass": "^4.10.0"
   },
   "author": {
-    "name": "Aspire Themes",
-    "email": "ahmad@aspirethemes.com",
-    "url": "https://aspirethemes.com/"
+    "name": "Ben Ravetta",
+    "email": "hello@benravetta.com",
+    "url": "https://benravetta.com"
   },
   "config": {
     "posts_per_page": 8,
