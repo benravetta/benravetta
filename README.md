@@ -21,4 +21,6 @@ _A "proper" web developer. Someone who cares about negativity. Someone who enjoy
 ![Twitter Follow](https://img.shields.io/twitter/follow/benravetta?color=FE0152&label=Twitter&style=for-the-badge) ![Reddit User Karma](https://img.shields.io/reddit/user-karma/combined/brightworkdotuk?color=FE0152&label=reddit&style=for-the-badge)
 
 # Repo Activity
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/benravetta/benravetta?color=FE0152&style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/benravetta/benravetta?color=FE0152&label=latest&style=for-the-badge) ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m785734086-0a80790ee710636c28a51a4a?color=FE0152&label=WEBSITE%20UPTIME&style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/benravetta/benravetta?color=FE0152&style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/benravetta/benravetta?color=FE0152&label=latest&style=for-the-badge) ![Uptime Robot ratio (30 days)]<!-- (https://img.shields.io/uptimerobot/ratio/m785734086-0a80790ee710636c28a51a4a?color=FE0152&label=WEBSITE%20UPTIME&style=for-the-badge)
+
+-->
