@@ -1,5 +1,6 @@
 {
   "name": "OITL Custom",
+  "demo": "https://onlyinthelakes.com",
   "description": "Only in the Lakes - Hand curated content from the English Lake District",
   "version": "1.0.0",
   "engines": {
@@ -47,7 +48,7 @@
     "node-sass": "^4.10.0"
   },
   "author": {
-    "name": "Ben Ravetta Creative/Brightwork",
+    "name": "Ben Ravetta",
     "email": "benravetta@icloud.com",
     "url": "https://onlyinthelakes.com"
   },
