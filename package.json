@@ -1,6 +1,6 @@
 {
   "name": "OITL Custom",
-  "description": "Only in the Lakes - Hand curated content from the English Lake District.",
+  "description": "Only in the Lakes - Hand curated content from the English Lake District",
   "version": "1.0.0",
   "engines": {
     "ghost": ">=3.0.0",
