@@ -1,8 +1,7 @@
 {
-  "name": "krabi",
-  "description": "Premium Ghost Theme",
-  "demo": "http://krabi.aspirethemes.com/",
-  "version": "1.0.3",
+  "name": "OITL Custom",
+  "description": "Only in the Lakes - Hand curated content from the English Lake District.",
+  "version": "1.0.0",
   "engines": {
     "ghost": ">=3.0.0",
     "ghost-api": "v3"
@@ -48,9 +47,9 @@
     "node-sass": "^4.10.0"
   },
   "author": {
-    "name": "Aspire Themes",
-    "email": "ahmad@aspirethemes.com",
-    "url": "https://aspirethemes.com/"
+    "name": "Ben Ravetta Creative/Brightwork",
+    "email": "benravetta@icloud.com",
+    "url": "https://onlyinthelakes.com"
   },
   "config": {
     "posts_per_page": 8,
