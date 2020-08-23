@@ -1,0 +1,34 @@
+<footer class="footer-section global-footer">
+	<div class="footer-wrap">
+		<div class="footer-data">
+			<div class="footer-logo">
+				{{#if @site.logo}}
+				<a href="{{@site.url}}" class="is-image"><img src="{{@site.logo}}" alt="{{@site.title}}"></a>
+				{{else}}
+				<a href="{{@site.url}}" class="is-title">{{@site.title}}</a>
+				{{/if}}
+			</div>
+			{{#if @site.description}}
+			<p class="footer-description">{{@site.description}}</p>
+			{{/if}}
+			<div class="footer-icons">
+				{{#if @site.facebook}}
+				<a href="{{facebook_url}}" aria-label="link Facebook">{{>icons/social/facebook}}</a>
+				{{/if}}
+				{{#if @site.twitter}}
+				<a href="{{twitter_url}}" aria-label="link Twitter">{{>icons/social/twitter}}</a>
+				{{/if}}
+				{{>footer_icons}}
+			</div>
+		</div>
+		<div class="footer-nav">
+			{{#if @site.secondary_navigation}}
+			{{navigation type="secondary"}}
+			{{/if}}
+		</div>
+	</div>
+	<div class="footer-copyright">
+		{{@site.title}} &copy; {{date format="YYYY"}}. {{t "All Right Reserved"}}.
+		{{{t "Published with {ghost-link}" ghost-link="<a href=\"https://ghost.org\">Ghost</a>"}}}.
+	</div>
+</footer>

@@ -1,0 +1,31 @@
+{{!< default}}
+{{#post}}
+<div class="post-header item is-hero is-page is-first{{#if feature_image}} is-image{{/if}} {{post_class}}">
+	<div class="item-container global-color">
+		{{#if feature_image}}
+		<div class="item-image global-image global-color">
+			{{>images/post_feature_img}}
+		</div>
+		{{/if}}
+		<div class="item-content">
+			<h1 class="item-title">{{title}}</h1>
+			<div class="membership-description">
+				<p class="item-excerpt">
+					{{#if custom_excerpt}}
+					{{custom_excerpt}}
+					{{else}}
+					{{t "Unlock full access to {blog-title} and see the entire library of subscribers-only content & updates" blog-title=@site.title}}
+					{{/if}}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<h4 class="global-heading">{{t "Choose your plan"}}</h4>
+<div class="membership-cards">
+	{{>members/plan_free}}
+	{{>members/plan_monthly}}
+	{{>members/plan_yearly}}
+</div>
+<small class="global-question">{{t "Already have an account?"}} <a href="{{@site.url}}/signin/">{{t "Sign in"}}</a></small>
+{{/post}}

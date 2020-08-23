@@ -1,0 +1,30 @@
+<article class="item-{{@number}}">
+	<h3><a href="{{url}}" class="global-underline">{{title}}</a></h3>
+	{{#has author="count:>0"}}
+	<div class="global-meta">
+		{{#has author="count:1"}}
+		{{#primary_author}}
+		<a href="{{url}}">{{name}}</a>
+		{{/primary_author}}
+		{{else}}
+		{{#has author="count:2"}}
+		{{#if authors}}
+		{{#foreach authors}}
+		<a href="{{url}}">{{name}}</a>
+		{{#if @first}}
+		{{t "&"}}
+		{{/if}}
+		{{/foreach}}
+		{{/if}}
+		{{else}}
+		{{#has author="count:>2"}}
+		{{#primary_author}}
+		<a href="{{url}}">{{name}}</a>
+		{{t "and others"}}
+		{{/primary_author}}
+		{{/has}}
+		{{/has}}
+		{{/has}}
+	</div>
+	{{/has}}
+</article>

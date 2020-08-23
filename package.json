@@ -1,0 +1,33 @@
+{
+    "name": "renge",
+    "demo": "https://renge.fueko.net",
+    "version": "1.0.3",
+    "engines": {
+        "ghost-api": "v3"
+    },
+    "author": {
+        "name": "fueko",
+        "email": "hello@fueko.net",
+        "url": "https://fueko.net"
+    },
+    "keywords": [
+        "ghost-theme"
+    ],
+    "config": {
+        "posts_per_page": 5,
+        "image_sizes": {
+            "s": {
+                "width": 260
+            },
+            "m": {
+                "width": 500
+            },
+            "l": {
+                "width": 800
+            },
+            "xl": {
+                "width": 1100
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{{!< default}}
+{{#get "authors" limit="all" include="count.posts" order="count.posts desc" as |authors|}}
+{{#if authors}}
+<div class="custom-elements-wrap loop-wrap">
+	{{#foreach authors to="3"}}
+	<div class="custom-element">
+		{{#if profile_image}}
+		<a href="{{url}}" class="global-image">
+			{{>images/tag_author_img tag_author_image=profile_image}}
+		</a>
+		{{else if cover_image}}
+		<a href="{{url}}" class="global-image">
+			{{>images/tag_author_img tag_author_image=cover_image}}
+		</a>
+		{{else}}
+		<a href="{{url}}" class="no-image">
+			{{>icons/site/user}}
+		</a>
+		{{/if}}
+		<h2><a href="{{url}}" class="global-underline">{{name}}</a></h2>
+		<span>{{plural count.posts empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}</span>
+	</div>
+	{{/foreach}}
+	<h4 class="custom-element-heading global-heading">{{t "See also"}}</h4>
+	{{#foreach authors from="4"}}
+	<div class="custom-element bottom">
+		{{#if profile_image}}
+		<a href="{{url}}" class="global-image">
+			{{>images/tag_author_img tag_author_image=profile_image}}
+		</a>
+		{{else if cover_image}}
+		<a href="{{url}}" class="global-image">
+			{{>images/tag_author_img tag_author_image=cover_image}}
+		</a>
+		{{else}}
+		<a href="{{url}}" class="no-image">
+			{{>icons/site/user}}
+		</a>
+		{{/if}}
+		<h2><a href="{{url}}" class="global-underline">{{name}}</a></h2>
+		<span>{{plural count.posts empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}</span>
+	</div>
+	{{/foreach}}
+</div>
+{{/if}}
+{{/get}}

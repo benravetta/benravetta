@@ -1,0 +1,128 @@
+<div class="loop-section">
+	<div class="loop-wrap">
+		{{#foreach posts to="1" visibility="all"}}
+		<article class="item is-hero{{^is "paged"}} is-first{{/is}}{{#if feature_image}} is-image{{/if}} {{post_class}}">
+			<div class="item-container global-color">
+				{{#if feature_image}}
+				<a href="{{url}}" class="item-image global-image global-color">
+					{{>images/post_feature_img}}
+				</a>
+				{{/if}}
+				<div class="item-content">
+					{{>members/visibility_label}}
+					<div class="global-meta">
+						<time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at timeago="true"}}</time>
+						{{t "by"}}
+						{{#has author="count:1"}}
+						{{#primary_author}}
+						<a href="{{url}}">{{name}}</a>
+						{{/primary_author}}
+						{{else}}
+						{{#has author="count:2"}}
+						{{#if authors}}
+						{{#foreach authors}}
+						<a href="{{url}}">{{name}}</a>
+						{{#if @first}}
+						{{t "&"}}
+						{{/if}}
+						{{/foreach}}
+						{{/if}}
+						{{else}}
+						{{#has author="count:>2"}}
+						{{#primary_author}}
+						<a href="{{url}}">{{name}}</a>
+						{{t "and others"}}
+						{{/primary_author}}
+						{{/has}}
+						{{/has}}
+						{{/has}}
+						<span class="global-reading">
+							— {{reading_time minute=(t "1 minute read") minutes=(t "% minutes read")}}
+						</span>
+					</div>
+					<h2 class="item-title">
+					<a href="{{url}}" class="global-underline">{{title}}</a>
+					</h2>
+					<p class="item-excerpt">
+						{{#if custom_excerpt}}
+						{{{custom_excerpt}}}
+						{{else}}
+						{{excerpt words="42"}}...
+						{{/if}}
+					</p>
+					{{#if tags}}
+					<div class="global-tags">
+						{{#foreach tags}}
+						<a href="{{url}}" class="global-tags-hash-sign">{{name}}</a>
+						{{/foreach}}
+					</div>
+					{{/if}}
+				</div>
+			</div>
+		</article>
+		{{/foreach}}
+		{{#foreach posts from="2" visibility="all"}}
+		<article class="item{{#if @odd}} is-odd{{else}} is-even{{/if}}{{#if feature_image}} is-image{{/if}} {{post_class}}">
+			<div class="item-container">
+				{{>members/visibility_label}}
+				<div class="item-content">
+					{{#if feature_image}}
+					<a href="{{url}}" class="item-image global-image global-color">
+						{{>images/post_small_feature_img}}
+					</a>
+					{{/if}}
+					<h2 class="item-title">
+					<a href="{{url}}" class="global-underline">{{title}}</a>
+					</h2>
+					<div class="global-meta">
+						{{#has author="count:1"}}
+						{{#primary_author}}
+						<a href="{{url}}">{{name}}</a>
+						{{/primary_author}}
+						{{else}}
+						{{#has author="count:2"}}
+						{{#if authors}}
+						{{#foreach authors}}
+						<a href="{{url}}">{{name}}</a>
+						{{#if @first}}
+						{{t "&"}}
+						{{/if}}
+						{{/foreach}}
+						{{/if}}
+						{{else}}
+						{{#has author="count:>2"}}
+						{{#primary_author}}
+						<a href="{{url}}">{{name}}</a>
+						{{t "and others"}}
+						{{/primary_author}}
+						{{/has}}
+						{{/has}}
+						{{/has}}
+						<span class="global-reading">
+							— {{reading_time minute=(t "1 minute read") minutes=(t "% minutes read")}}
+						</span>
+					</div>
+					<p class="item-excerpt">
+						{{#if custom_excerpt}}
+						{{{custom_excerpt}}}
+						{{else}}
+						{{#if feature_image}}
+						{{excerpt words="22"}}...
+						{{else}}
+						{{excerpt words="28"}}...
+						{{/if}}
+						{{/if}}
+					</p>
+					{{#if tags}}
+					<div class="global-tags">
+						{{#foreach tags}}
+						<a href="{{url}}" class="global-tags-hash-sign">{{name}}</a>
+						{{/foreach}}
+					</div>
+					{{/if}}
+				</div>
+			</div>
+		</article>
+		{{/foreach}}
+	</div>
+</div>

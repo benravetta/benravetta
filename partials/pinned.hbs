@@ -1,0 +1,23 @@
+<div class="pinned-section">
+{{#get "pages" limit="4" filter="featured:true" order="published_at desc" as |pinned_pages|}}
+{{#if pinned_pages}}
+	<div class="pinned-pages global-special">
+		<h2><span>{{t "Announcements"}}</span></h2>
+		{{#foreach pinned_pages visibility="all"}}
+		{{>special_section}}
+		{{/foreach}}
+	</div>
+{{/if}}
+{{/get}}
+
+{{#get "posts" limit="4" filter="featured:true" include="authors" as |pinned_posts|}}
+{{#if pinned_posts}}
+	<div class="pinned-posts global-special">
+		<h2><span>{{t "Don’t miss it"}}</span></h2>
+		{{#foreach pinned_posts visibility="all"}}
+		{{>special_section}}
+		{{/foreach}}
+	</div>
+{{/if}}
+{{/get}}
+</div>

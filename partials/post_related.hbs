@@ -1,0 +1,12 @@
+{{#if primary_tag}}
+<div class="post-related global-special">
+	<h2><span>{{t "You might also like"}}</span></h2>
+	{{#get "posts" limit="4" filter="tags:{{primary_tag.slug}}+id:-{{id}}" include="authors" as |related_posts|}}
+	{{#if related_posts}}
+	{{#foreach related_posts visibility="all"}}
+	{{>special_section}}
+	{{/foreach}}
+	{{/if}}
+	{{/get}}
+</div>
+{{/if}}
