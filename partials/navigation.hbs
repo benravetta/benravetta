@@ -1,10 +1,10 @@
 {{! Header navigation }}
 
 {{^if isSecondary}}
-{{#foreach navigation to="3"}}
+{{#foreach navigation to="5"}}
 <li><a href="{{url absolute="true"}}" {{#if current}}class="is-active"{{/if}}>{{label}}</a></li>
 {{/foreach}}
-{{#foreach navigation from="4"}}
+{{#foreach navigation from="6"}}
 {{#if @first}}
 <li class="header-nav-dropdown">
 	{{>icons/site/dots}}
