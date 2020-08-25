@@ -18,6 +18,10 @@
 		<div class="item-content">
 			<div class="item-meta global-meta">
 				<time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at timeago="true"}}</time>
+				<style media="screen">
+  					.updated[datetime="{{published_at}}"] { display: none; }
+				</style>
+				<time class="updated" datetime="{{updated_at}}">Updated: {{updated_at}}</time>
 				{{t "by"}}
 				{{#has author="count:1"}}
 				{{#primary_author}}
