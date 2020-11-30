@@ -10,7 +10,7 @@ _A photographer, free spirit, casual coder, "jack of all trades", content writer
 
 ## Who I am not 👇🏻
 
-_A "proper" web developer. Someone who cares about negativity. Someone who enjoys small talk. A patient man._
+_Someone who cares about negativity. Someone who enjoys small talk. A patient man._
 
 - 🔧 I’m currently working on building out my [personal blog](https://benravetta.com)
 - 📚 I’m currently reading [Edward Snowden's 'Permanent Record'](https://www.amazon.co.uk/Permanent-Record-Edward-Snowden/dp/1529035651/)
