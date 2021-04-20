@@ -1,6 +1,6 @@
 # Hi there 😃 I'm Ben Ravetta.
 
-![Ben Ravetta Creative](https://i.imgur.com/jpOqDpN.png)
+![Ben Ravetta Creative](https://i.imgur.com/pUdaYc6.png)
 
 ## Who I am 👇🏻 
 
@@ -12,10 +12,10 @@ _A photographer, free spirit, casual coder, "jack of all trades", content writer
 
 _Someone who cares about negativity. Someone who enjoys small talk. A patient man._
 
-- 🔧 I’m currently working on building out my [personal blog](https://benravetta.com)
+- 🔧 I’m currently working on building out my [personal blog](https://benravetta.com) + my premium newsletter [Out Beyond the Pines](https://outbeyondthepines.com)
 - 📚 I’m currently reading [Edward Snowden's 'Permanent Record'](https://www.amazon.co.uk/Permanent-Record-Edward-Snowden/dp/1529035651/)
 - 💬 Ask me about photography, fatherhood, cars, Golden Retrievers ... you name it.
-- 😂 Pronouns: No, thank you.
+- 🙂 Pronouns: No, thank you.
 - 😏 Love at first site: I was born in '87, but I connected to the internet for the first time a very late 2007! Yes, I had the best childhood. Kids these days wouldn't get it.
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/benravetta?color=FE0152&label=Twitter&style=for-the-badge) ![Reddit User Karma](https://img.shields.io/reddit/user-karma/combined/brightworkdotuk?color=FE0152&label=reddit&style=for-the-badge)
